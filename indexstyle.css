@@ -317,7 +317,7 @@ border: 1.5px solid #5a5a5a;
     inset: 0;
     background: linear-gradient(180deg, rgba(200, 200, 200, 0), rgba(0, 0, 0, 0.8));
     opacity: 0;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     transition: opacity .28s cubic-bezier(.2, .9, .3, 1);
 }
 
@@ -643,3 +643,4 @@ height: 58px;
     }
     
 }
+
