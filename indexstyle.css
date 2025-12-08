@@ -289,6 +289,7 @@ border: 1.5px solid #5a5a5a;
 /* ==========================
    Image Cards
 ========================== */
+/* کارت اصلی */
 .card {
     background: #2e2e2e;
     border-radius: 20px;
@@ -298,7 +299,41 @@ border: 1.5px solid #5a5a5a;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
+/* باکس تصویر */
 .card .img-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    transition: filter 0.3s ease; /* برای افکت نرم */
+}
+
+/* افکت هنگام لمس روی موبایل */
+@media (max-width: 768px) {
+    .card .img-box:active {
+        filter: blur(6px) grayscale(100%);
+    }
+}
+
+
+
+
+
+/* ==========================
+   Image Cards
+========================== */
+.bcard {
+    background: #2e2e2e;
+    border-radius: 20px;
+    border: 1.5px solid #5a5a5a;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.bcard .img-box {
     width: 100%;
     aspect-ratio: 1 / 1;
     background-size: cover;
@@ -308,7 +343,7 @@ border: 1.5px solid #5a5a5a;
 }
 
 /* نیمه پایین با fade و blur نرم */
-.card .img-box::after {
+.bcard .img-box::after {
     content: "";
     position: absolute;
     left: 0;
@@ -322,34 +357,41 @@ border: 1.5px solid #5a5a5a;
 }
 
 /* محتوا روی نیمه پایین */
-.card .content {
+.bcard .content {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding:  4% 8%;
+    padding: 4% 8%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline; /* تراز خط پایه */
+    justify-content: center;
+    gap: 12px;
     text-align: center;
-gap: 24px;
     color: #fff;
 }
 
-/* تیتر و زیرتیتر */
-.card .title {
+.bcard .title {
     font-size: 1.6rem;
     font-weight: 800;
     margin: 0;
     color: #f0f0f0;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.6); /* خوانایی بهتر */
+    text-shadow: 0 3px 6px rgba(0,0,0,0.5);
 }
 
-.card .subtitle {
+.bcard .subtitle {
     font-size: 1rem;
     color: #d0d0d0;
     opacity: 0.95;
     text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.bcard .title::after {
+    content: "•";
+    margin: 0 8px;
+    color: #d0d0d0;
+    font-size: 1rem;
 }
 
 
