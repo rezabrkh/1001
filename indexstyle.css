@@ -326,8 +326,8 @@ border: 1.5px solid #5a5a5a;
 ========================== */
 .bcard {
     background: #2e2e2e;
-    border-radius: 20px;
-    border: 1.5px solid #5a5a5a;
+   
+   
     overflow: hidden;
     position: relative;
 
@@ -339,6 +339,7 @@ border: 1.5px solid #5a5a5a;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
+     border: 1.5px solid #5a5a5a;
     position: relative;
 }
 
@@ -353,7 +354,7 @@ border: 1.5px solid #5a5a5a;
     background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.8) 100%);
     backdrop-filter: blur(8px); /* blur تدریجی */
 
-    border-radius: 20px;
+    border-radius: 18px;
 }
 
 /* محتوا روی نیمه پایین */
@@ -393,7 +394,22 @@ border: 1.5px solid #5a5a5a;
     color: #d0d0d0;
     font-size: 1rem;
 }
+/* --- Responsive Typography --- */
 
+@media (min-width: 600px) and (max-width: 1200px) {
+  .bcard .title {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+  }
+
+  .bcard .subtitle {
+    font-size: clamp(0.85rem, 1.4vw, 1.1rem);
+  }
+
+  .bcard .title::after {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    margin: 0 6px;
+  }
+}
 
 /* Full Card */
 .fcard .img-box {
