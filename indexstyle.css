@@ -99,10 +99,10 @@ header {
    Hero
 ========================== */
 .hero {
-    background: #1d1d1d;
+   
     margin: 40px;
-    padding: 20PX 20PX 20PX 20PX;
-    border: 2px solid #5a5a5a;
+   
+  
     border-radius: 12px;
     text-align: justify;
     text-justify: auto;
@@ -111,11 +111,9 @@ header {
 }
 
 .heropage {
-    background: #1d1d1d;
+   
     margin: 20px;
-    padding: 20PX 20PX 20PX 20PX;
-    border: 2px solid #5a5a5a;
-    border-radius: 12px;
+    
     text-align: justify;
     text-justify: auto;
     color: #d3d3d3;
@@ -163,8 +161,8 @@ ul.b {
    Profile Card
 ========================== */
 .profile-card {
-    background: #161616;
-    border: 2px solid #5a5a5a;
+    background: #000000;
+    border: 1px solid #5a5a5a;
     border-radius: 12px;
     padding: 24px;
     margin: 20px 20px 0 20px;
@@ -185,7 +183,7 @@ ul.b {
     width: 96px;
     height: 96px;
     border-radius: 12px;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #5a5a5a;
     object-fit: cover;
 
 }
@@ -218,8 +216,8 @@ ul.b {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background: #161616;
-    border: 2px solid #5a5a5a;
+    background: #000000;
+    border: 1px solid #5a5a5a;
     border-radius: 12px;
     padding: 20px;
     margin: 20px 20px 0 20px;
@@ -235,8 +233,8 @@ ul.b {
     font-family: "Vazirmatn";
     font-size: 1rem;
     color: #c6c6c6;
-    background: #282828;
-    border: 2px solid #5a5a5a;
+    background: #1f1f1f;
+    border: 1px solid #5a5a5a;
     border-radius: 8px;
     outline: none;
     box-sizing: border-box;
@@ -271,14 +269,15 @@ ul.b {
     font-family: "Vazirmatn";
     color: #dedede;
     background: #e4661d;
-    border: 2px solid #454545;
+   
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 48px;
     box-shadow: 0 4px 14px rgba(152, 83, 4, 0.35);
-    transition: background 0.2s;
+    transition: transform .12s, box-shadow .12s;
+border-style: none;
     width: auto;
     max-width: 180px;
     margin: 0 auto;
@@ -298,7 +297,7 @@ ul.b {
     padding: 10px 22px;
     border-radius: 12px;
     background: #e4661d;
-    border: 2px solid #454545;
+    
     box-shadow: 0 4px 14px rgba(152, 83, 4, 0.35);
     color: #dedede;
     text-decoration: none;
@@ -378,7 +377,7 @@ ul.b {
 .card .img-box {
     width: 100%;
     border-radius: 12px;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #5a5a5a;
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
@@ -406,7 +405,7 @@ ul.b {
 
 
     overflow: hidden;
-    position: relative;
+  
 
 }
 
@@ -416,66 +415,45 @@ ul.b {
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
-    border-radius: 12px;
-    border: 2px solid #5a5a5a;
-    position: relative;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid #5a5a5a;
+  
 }
 
-/* نیمه پایین با fade و blur نرم */
-.bcard .img-box::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 20%;
-    /* نیمه پایین */
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.8) 100%);
-    backdrop-filter: blur(8px);
-    /* blur تدریجی */
-
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-}
 
 /* محتوا روی نیمه پایین */
 .bcard .content {
-    position: absolute;
+   
     bottom: 0px;
     left: 0;
     right: 0;
-    padding: 4% 8%;
+    padding: 12px;
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    flex-direction: column;
+   background-color: #878787;
+   text-align: center;
     /* تراز خط پایه */
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
-    color: #fff;
+   
+   
+       border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+   
 }
 
 .bcard .title {
-    font-size: 1.6rem;
-    font-weight: 800;
+    font-size: 1.9rem;
+    font-weight: 900;
     margin: 0;
-    color: #f0f0f0;
-    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-}
+    color: #000000;
+   }
 
 .bcard .subtitle {
-    font-size: 1rem;
-    color: #d0d0d0;
-    opacity: 0.95;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
-}
+    font-size: 1.3rem;
+    color: #181818;
+   
+  }
 
-.bcard .title::after {
-    content: " | ";
-    margin: 0 8px;
-    color: #d0d0d0;
-    font-size: 1rem;
-}
+
 
 /* --- Responsive Typography --- */
 @media (max-width: 599px) {
@@ -517,7 +495,7 @@ ul.b {
 
     width: 100%;
     border-radius: 12px;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #5a5a5a;
     background-size: cover;
     background-position: center;
 
@@ -563,7 +541,7 @@ footer {
     direction: ltr;
     padding: 20px 0;
 
-    border: 2px solid #5a5a5a;
+   
     border-radius: 12px 12px 0 0;
     border-bottom-style: none;
 
@@ -574,7 +552,7 @@ footer {
     height: 58px;
     margin: 8px;
     border-radius: 12px;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #5a5a5a;
 }
 
 .footer-text {
@@ -602,7 +580,7 @@ footer {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    border: 2px solid #5a5a5a;
+  
     width: 100%;
     max-width: 1600px;
     /* یا هر مقداری که می‌خوای */
@@ -633,14 +611,14 @@ footer {
     max-width: 1600px;
     /* یا هر عرض دلخواه */
 
-    background: #131313dc;
+    background: #5e5e5ee2;
     backdrop-filter: blur(6px);
     max-height: 0;
     overflow: hidden;
     transition: 0.35s ease;
     box-shadow: 0 10px 25px #0002;
     z-index: 999;
-    border: 2px solid #5a5a5a;
+ 
     border-radius: 0 0 12px 12px;
 }
 
@@ -650,7 +628,7 @@ footer {
 
 /* Grid 3x3 */
 .grid-box {
-    padding: 40px;
+    padding: 32px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 16px;
@@ -663,7 +641,7 @@ footer {
     flex-direction: column;
     text-align: center;
     text-decoration: none;
-    color: #d7d7d7;
+    color: #000000;
 
 }
 
