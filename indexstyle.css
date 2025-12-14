@@ -470,13 +470,13 @@ border-style: none;
     font-size: 1.5rem;
     font-weight: 900;
     margin: 0;
-    color: #9e9d9d;
+    color: #bdbdbd;
    }
 
 .bcard .subtitle {
     font-size: 1.2rem;
      font-weight: 700;
-    color: #838383;
+    color: #b6b6b6;
    
   }
 
@@ -603,7 +603,7 @@ footer {
     max-width: 1600px;
     /* یا هر عرض دلخواه */
 
-    background: #909090e2;
+    background: #949494ab;
     backdrop-filter: blur(6px);
     max-height: 0;
     overflow: hidden;
@@ -645,9 +645,10 @@ footer {
     border-radius: 12px;
 }
 
-.item h4 {
+.item h2 {
     margin-top: 8px;
     font-size: 18px;
+    font-weight: 900;
 }
 
 /* ==========================
