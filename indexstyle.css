@@ -575,7 +575,7 @@ footer {
   
     width: 100%;
     max-width: 1600px;
-   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.131);
+   box-shadow: 0 2px 2px rgba(255, 255, 255, 0.151);
 
     height: 90px;
     background: #000000;
@@ -601,26 +601,45 @@ footer {
 
     width: 100%;
     max-width: 1600px;
-    /* یا هر عرض دلخواه */
+  
 
-    background: #949494ab;
-    backdrop-filter: blur(6px);
+    background: linear-gradient(
+        180deg,
+        rgba(16, 16, 16, 0.622) 0%,
+        rgba(53, 53, 53, 0.461) 60%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
+
+     backdrop-filter: blur(40px) saturate(220%) contrast(120%);
+    -webkit-backdrop-filter: blur(40px) saturate(220%) contrast(120%);
+
+    border: 1px solid rgba(255, 255, 255, 0.123);
+
+    box-shadow:
+        inset 0 1px 1px rgba(36, 36, 36, 0.7),
+        0 30px 60px rgba(0,0,0,0.18);
+
+   
     max-height: 0;
     overflow: hidden;
     transition: 0.35s ease;
-    box-shadow: 0 10px 25px #0002;
+    
     z-index: 999;
  
     border-radius: 0 0 12px 12px;
 }
-
+@keyframes shimmer {
+    0% { transform: rotate(45deg) translate(-100%, -100%); }
+    50% { transform: rotate(45deg) translate(50%, 50%); }
+    100% { transform: rotate(45deg) translate(-100%, -100%); }
+}
 .mega-menu.show {
     max-height: 600px;
 }
 
 /* Grid 3x3 */
 .grid-box {
-    padding: 32px;
+    padding: 24px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     gap: 16px;
@@ -633,7 +652,7 @@ footer {
     flex-direction: column;
     text-align: center;
     text-decoration: none;
-    color: #000000;
+    color: #c3c3c3;
 
 }
 
@@ -645,7 +664,7 @@ footer {
     border-radius: 12px;
 }
 
-.item h2 {
+.item h4 {
     margin-top: 8px;
     font-size: 18px;
     font-weight: 900;
