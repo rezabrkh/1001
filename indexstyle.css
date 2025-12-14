@@ -1,4 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;900&display=swap");
+@font-face {
+  font-family: "Ray";
+  src: url("fonts/w_Ray.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ray";
+  src: url("fonts/w_RayBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Ray";
+  src: url("fonts/w_RayBlack.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Ray", sans-serif;
+}
+
 
 /* ==========================
    Global Reset & Base Styles
@@ -7,7 +33,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Vazirmatn", sans-serif;
+    font-family: "Ray", sans-serif;
 }
 
 h1 {
@@ -17,29 +43,29 @@ h1 {
 
 /* Bold */
 h2 {
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.6;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 2;
 }
 
 /* Semibold */
 h3 {
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 3;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 2;
 }
 
 h4 {
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 h5 {
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 700;
 }
 p {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
      line-height: 1.6;
 }
@@ -53,7 +79,7 @@ body {
 }
 
 body {
-    background: #0c0c0c;
+    background: #000000;
     color: #d7d7d7;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
@@ -106,8 +132,8 @@ header {
     border-radius: 12px;
     text-align: justify;
     text-justify: auto;
-    color: #d3d3d3;
-    font-family: "Vazirmatn";
+    color: #b9b9b9;
+    font-family: "Ray";
 }
 
 .heropage {
@@ -116,8 +142,8 @@ header {
     
     text-align: justify;
     text-justify: auto;
-    color: #d3d3d3;
-    font-family: "Vazirmatn";
+    color: #b9b9b9;
+    font-family: "Ray";
 }
 
 /* ==========================
@@ -162,7 +188,7 @@ ul.b {
 ========================== */
 .profile-card {
     background: #000000;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
     border-radius: 12px;
     padding: 24px;
     margin: 20px 20px 0 20px;
@@ -183,7 +209,7 @@ ul.b {
     width: 96px;
     height: 96px;
     border-radius: 12px;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
     object-fit: cover;
 
 }
@@ -204,7 +230,7 @@ ul.b {
 
 .profile-card .name {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     text-align: center;
 }
@@ -217,7 +243,7 @@ ul.b {
     flex-direction: column;
     gap: 16px;
     background: #000000;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
     border-radius: 12px;
     padding: 20px;
     margin: 20px 20px 0 20px;
@@ -230,11 +256,11 @@ ul.b {
     width: 100%;
     min-height: 48px;
     padding: 12px 14px;
-    font-family: "Vazirmatn";
+    font-family: "Ray";
     font-size: 1rem;
     color: #c6c6c6;
     background: #1f1f1f;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
     border-radius: 8px;
     outline: none;
     box-sizing: border-box;
@@ -263,10 +289,10 @@ ul.b {
 .btn {
     padding: 10px 32px;
     border-radius: 12px;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.1rem;
     direction: ltr;
-    font-family: "Vazirmatn";
+    font-family: "Ray";
     color: #dedede;
     background: #e4661d;
    
@@ -297,11 +323,11 @@ border-style: none;
     padding: 10px 22px;
     border-radius: 12px;
     background: #e4661d;
-    
+    font-weight: 900;
     box-shadow: 0 4px 14px rgba(152, 83, 4, 0.35);
     color: #dedede;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-family: inherit;
     margin: 0 auto;
     transition: transform .12s, box-shadow .12s;
@@ -377,7 +403,7 @@ border-style: none;
 .card .img-box {
     width: 100%;
     border-radius: 12px;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
@@ -416,7 +442,7 @@ border-style: none;
     background-size: cover;
     background-position: center;
     border-radius: 12px 12px 0 0;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
   
 }
 
@@ -430,7 +456,7 @@ border-style: none;
     padding: 12px;
     display: flex;
     flex-direction: column;
-   background-color: #878787;
+   background-color: #838383;
    text-align: center;
     /* تراز خط پایه */
    
@@ -441,61 +467,27 @@ border-style: none;
 }
 
 .bcard .title {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 900;
     margin: 0;
     color: #000000;
    }
 
 .bcard .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+     font-weight: 700;
     color: #181818;
    
   }
 
 
 
-/* --- Responsive Typography --- */
-@media (max-width: 599px) {
-    .bcard .title {
-        font-size: clamp(1.2rem, 4vw, 2rem);
-    }
-
-    .bcard .subtitle {
-        font-size: clamp(1rem, 3vw, 1.4rem);
-    }
-
-    .bcard .title::after {
-        font-size: clamp(1rem, 3vw, 1rem);
-        margin: 0 6px;
-    }
-}
-
-
-
-
-
-@media (min-width: 600px) and (max-width: 1200px) {
-    .bcard .title {
-        font-size: clamp(0.6rem, 2vw, 1.8rem);
-    }
-
-    .bcard .subtitle {
-        font-size: clamp(0.5rem, 1.4vw, 1.1rem);
-    }
-
-    .bcard .title::after {
-        font-size: clamp(0.4rem, 1.2vw, 1rem);
-        margin: 0 6px;
-    }
-}
-
 /* Full Card */
 .fcard .img-box {
 
     width: 100%;
     border-radius: 12px;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
     background-size: cover;
     background-position: center;
 
@@ -535,7 +527,7 @@ border-style: none;
    Footer
 ========================== */
 footer {
-    background: #0c0c0c;
+    background: #000000;
     color: #bdbdbd;
     text-align: center;
     direction: ltr;
@@ -552,7 +544,7 @@ footer {
     height: 58px;
     margin: 8px;
     border-radius: 12px;
-    border: 1px solid #5a5a5a;
+    border: 1px solid #838383;
 }
 
 .footer-text {
@@ -583,10 +575,10 @@ footer {
   
     width: 100%;
     max-width: 1600px;
-    /* یا هر مقداری که می‌خوای */
+   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.131);
 
     height: 90px;
-    background: #0c0c0c;
+    background: #000000;
 
     border-top-style: none;
     border-radius: 0 0 12px 12px;
@@ -611,7 +603,7 @@ footer {
     max-width: 1600px;
     /* یا هر عرض دلخواه */
 
-    background: #5e5e5ee2;
+    background: #909090e2;
     backdrop-filter: blur(6px);
     max-height: 0;
     overflow: hidden;
@@ -649,7 +641,7 @@ footer {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border: 2px solid #5a5a5a;
+    border: 1px solid #4e4e4e;
     border-radius: 12px;
 }
 
