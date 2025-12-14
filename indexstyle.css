@@ -188,7 +188,7 @@ ul.b {
 ========================== */
 .profile-card {
     background: #000000;
-    border: 1px solid #838383;
+   
     border-radius: 12px;
     padding: 24px;
     margin: 20px 20px 0 20px;
@@ -209,7 +209,7 @@ ul.b {
     width: 96px;
     height: 96px;
     border-radius: 12px;
-    border: 1px solid #838383;
+   
     object-fit: cover;
 
 }
@@ -243,7 +243,7 @@ ul.b {
     flex-direction: column;
     gap: 16px;
     background: #000000;
-    border: 1px solid #838383;
+   
     border-radius: 12px;
     padding: 20px;
     margin: 20px 20px 0 20px;
@@ -260,7 +260,7 @@ ul.b {
     font-size: 1rem;
     color: #c6c6c6;
     background: #1f1f1f;
-    border: 1px solid #838383;
+  
     border-radius: 8px;
     outline: none;
     box-sizing: border-box;
@@ -403,7 +403,7 @@ border-style: none;
 .card .img-box {
     width: 100%;
     border-radius: 12px;
-    border: 1px solid #838383;
+   
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
@@ -442,7 +442,7 @@ border-style: none;
     background-size: cover;
     background-position: center;
     border-radius: 12px 12px 0 0;
-    border: 1px solid #838383;
+  
   
 }
 
@@ -487,7 +487,7 @@ border-style: none;
 
     width: 100%;
     border-radius: 12px;
-    border: 1px solid #838383;
+   
     background-size: cover;
     background-position: center;
 
@@ -544,7 +544,7 @@ footer {
     height: 58px;
     margin: 8px;
     border-radius: 12px;
-    border: 1px solid #838383;
+   
 }
 
 .footer-text {
@@ -641,7 +641,7 @@ footer {
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border: 1px solid #4e4e4e;
+   
     border-radius: 12px;
 }
 
@@ -677,7 +677,7 @@ footer {
     position: absolute;
     width: 8px;
     height: 8px;
-    background: #c0c0c0;
+    background: #b0b0b0;
     border-radius: 50%;
     transition: transform 0.45s ease, opacity 0.45s ease, width 0.45s ease, height 0.45s ease;
 }
