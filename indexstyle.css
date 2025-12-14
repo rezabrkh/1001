@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;900&display=swap");
 
 /* ==========================
    Global Reset & Base Styles
@@ -10,19 +10,50 @@
     font-family: "Vazirmatn", sans-serif;
 }
 
-h1 { font-size: 28px; font-weight: 900; } /* Bold */
-h2 { font-size: 22px; font-weight: 800; line-height: 1.6; } /* Semibold */
-h3 { font-size: 18px; font-weight: 700; line-height: 3; }
-h4 { font-size: 16px; font-weight: 600; }
-h5 { font-size: 12px; font-weight: 500; } /* Medium */
+h1 {
+    font-size: 28px;
+    font-weight: 900;
+}
 
-html, body {
+/* Bold */
+h2 {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.6;
+}
+
+/* Semibold */
+h3 {
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 3;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 13px;
+    font-weight: 500;
+}
+p {
+    font-size: 13px;
+    font-weight: 400;
+     line-height: 1.6;
+}
+
+/* Medium */
+
+html,
+body {
     margin: 0;
 
 }
 
 body {
-    background: #474747;
+    background: #0c0c0c;
     color: #d7d7d7;
     line-height: 1.55;
     -webkit-font-smoothing: antialiased;
@@ -68,11 +99,23 @@ header {
    Hero
 ========================== */
 .hero {
-    background: #161616;
-    border: 1.5px solid #5a5a5a;
-    border-radius: 20px;
-    padding: 26px;
-    
+    background: #1d1d1d;
+    margin: 40px;
+    padding: 20PX 20PX 20PX 20PX;
+    border: 2px solid #5a5a5a;
+    border-radius: 12px;
+    text-align: justify;
+    text-justify: auto;
+    color: #d3d3d3;
+    font-family: "Vazirmatn";
+}
+
+.heropage {
+    background: #1d1d1d;
+    margin: 20px;
+    padding: 20PX 20PX 20PX 20PX;
+    border: 2px solid #5a5a5a;
+    border-radius: 12px;
     text-align: justify;
     text-justify: auto;
     color: #d3d3d3;
@@ -85,29 +128,46 @@ header {
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+
 }
 
 ul.fcards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    GAP: 20PX;
+    margin: 0 20px;
+
 }
+
 
 ul.x {
     grid-template-columns: repeat(3, 1fr);
+    GAP: 20PX;
+    margin: 40px;
+
 
 }
+
+ul.b {
+    margin: 40px 40px 0px 40px;
+    gap: 20PX;
+
+
+
+}
+
 
 /* ==========================
    Profile Card
 ========================== */
 .profile-card {
     background: #161616;
-    border: 1.5px solid #5a5a5a;
-    border-radius: 20px;
+    border: 2px solid #5a5a5a;
+    border-radius: 12px;
     padding: 24px;
-
+    margin: 20px 20px 0 20px;
     color: #d6d6d6;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     display: flex;
@@ -122,10 +182,10 @@ ul.x {
 }
 
 .profile-card .avatar {
-    width: 128px;
-    height: 128px;
-    border-radius: 20px;
-border: 1.5px solid #5a5a5a;
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+    border: 2px solid #5a5a5a;
     object-fit: cover;
 
 }
@@ -159,11 +219,11 @@ border: 1.5px solid #5a5a5a;
     flex-direction: column;
     gap: 16px;
     background: #161616;
-    border: 1.5px solid #5a5a5a;
-    border-radius: 20px;
-    padding: 24px;
-
-    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    border: 2px solid #5a5a5a;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 
 /* Inputs & Textarea */
@@ -176,13 +236,13 @@ border: 1.5px solid #5a5a5a;
     font-size: 1rem;
     color: #c6c6c6;
     background: #282828;
-    border: 1.5px solid #5a5a5a;
-    border-radius: 20px;
+    border: 2px solid #5a5a5a;
+    border-radius: 8px;
     outline: none;
     box-sizing: border-box;
     line-height: 20px;
-    transition: border-color 0.18s cubic-bezier(.2,.9,.3,1),
-                box-shadow 0.18s cubic-bezier(.2,.9,.3,1);
+    transition: border-color 0.18s cubic-bezier(.2, .9, .3, 1),
+        box-shadow 0.18s cubic-bezier(.2, .9, .3, 1);
     resize: none;
 }
 
@@ -204,14 +264,14 @@ border: 1.5px solid #5a5a5a;
 ========================== */
 .btn {
     padding: 10px 32px;
-    border-radius: 20px;
+    border-radius: 12px;
     font-weight: 700;
     font-size: 1.1rem;
     direction: ltr;
     font-family: "Vazirmatn";
     color: #dedede;
     background: #e4661d;
-  border:1.5px solid #454545;
+    border: 2px solid #454545;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -228,31 +288,46 @@ border: 1.5px solid #5a5a5a;
 .btn:hover {
     background: #f27013;
 }
-.insta-btn{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  height: 48px;
-  direction: ltr;
-  padding:10px 22px;
-  border-radius:20px;
-  background:#e4661d;
-  border:1.5px solid #454545;
-   box-shadow: 0 4px 14px rgba(152, 83, 4, 0.35);
-  color:#dedede;
-  text-decoration:none;
-  font-weight:600;
-  font-family:inherit;
-  margin: 0 auto;
-  transition:transform .12s, box-shadow .12s;
+
+.insta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 48px;
+    direction: ltr;
+    padding: 10px 22px;
+    border-radius: 12px;
+    background: #e4661d;
+    border: 2px solid #454545;
+    box-shadow: 0 4px 14px rgba(152, 83, 4, 0.35);
+    color: #dedede;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: inherit;
+    margin: 0 auto;
+    transition: transform .12s, box-shadow .12s;
 }
-.insta-btn:focus{ outline:3px solid rgba(99,102,241,.15); outline-offset:2px; }
-.insta-btn:hover{ transform:translateY(-2px); box-shadow:0 6px 18px rgba(16,24,40,.06); }
+
+.insta-btn:focus {
+    outline: 3px solid rgba(99, 102, 241, .15);
+    outline-offset: 2px;
+}
+
+.insta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(16, 24, 40, .06);
+}
 
 /* make the icon adopt brand gradient if you want */
-.insta-icon{ color: #dedede;   display: block;
- } /* or keep currentColor */
-.insta-id{ font-size:1.1rem; }
+.insta-icon {
+    color: #dedede;
+    display: block;
+}
+
+/* or keep currentColor */
+.insta-id {
+    font-size: 1.1rem;
+}
 
 /* ==========================
    Desktop Layout
@@ -261,7 +336,7 @@ border: 1.5px solid #5a5a5a;
     .box {
         flex-direction: row;
         align-items: flex-start;
-        
+
     }
 
     .input {
@@ -291,23 +366,26 @@ border: 1.5px solid #5a5a5a;
 ========================== */
 /* کارت اصلی */
 .card {
-    background: #2e2e2e;
-    border-radius: 20px;
-   
+
+
+
     overflow: hidden;
     position: relative;
-    
+
 }
 
 /* باکس تصویر */
 .card .img-box {
     width: 100%;
+    border-radius: 12px;
+    border: 2px solid #5a5a5a;
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
+    border-radius: 12px;
     position: relative;
-    transition: filter 0.3s ease; /* برای افکت نرم */
+    transition: filter 0.3s ease;
+    /* برای افکت نرم */
 }
 
 /* افکت هنگام لمس روی موبایل */
@@ -325,9 +403,8 @@ border: 1.5px solid #5a5a5a;
    Image Cards
 ========================== */
 .bcard {
-    background: #2e2e2e;
-   
-   
+
+
     overflow: hidden;
     position: relative;
 
@@ -335,11 +412,12 @@ border: 1.5px solid #5a5a5a;
 
 .bcard .img-box {
     width: 100%;
+
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
-    border-radius: 20px;
-     border: 1.5px solid #5a5a5a;
+    border-radius: 12px;
+    border: 2px solid #5a5a5a;
     position: relative;
 }
 
@@ -350,25 +428,29 @@ border: 1.5px solid #5a5a5a;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 16%; /* نیمه پایین */
-    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.8) 100%);
-    backdrop-filter: blur(8px); /* blur تدریجی */
+    height: 20%;
+    /* نیمه پایین */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.8) 100%);
+    backdrop-filter: blur(8px);
+    /* blur تدریجی */
 
-    border-radius: 18px;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
 }
 
 /* محتوا روی نیمه پایین */
 .bcard .content {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 0;
     right: 0;
     padding: 4% 8%;
     display: flex;
     flex-direction: row;
-    align-items: baseline; /* تراز خط پایه */
+    align-items: baseline;
+    /* تراز خط پایه */
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     text-align: center;
     color: #fff;
 }
@@ -378,50 +460,69 @@ border: 1.5px solid #5a5a5a;
     font-weight: 800;
     margin: 0;
     color: #f0f0f0;
-    text-shadow: 0 3px 6px rgba(0,0,0,0.5);
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 .bcard .subtitle {
     font-size: 1rem;
     color: #d0d0d0;
     opacity: 0.95;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .bcard .title::after {
-    content: "•";
+    content: " | ";
     margin: 0 8px;
     color: #d0d0d0;
     font-size: 1rem;
 }
+
 /* --- Responsive Typography --- */
+@media (max-width: 599px) {
+    .bcard .title {
+        font-size: clamp(1.2rem, 4vw, 2rem);
+    }
+
+    .bcard .subtitle {
+        font-size: clamp(1rem, 3vw, 1.4rem);
+    }
+
+    .bcard .title::after {
+        font-size: clamp(1rem, 3vw, 1rem);
+        margin: 0 6px;
+    }
+}
+
+
+
+
 
 @media (min-width: 600px) and (max-width: 1200px) {
-  .bcard .title {
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
-  }
+    .bcard .title {
+        font-size: clamp(0.6rem, 2vw, 1.8rem);
+    }
 
-  .bcard .subtitle {
-    font-size: clamp(0.85rem, 1.4vw, 1.1rem);
-  }
+    .bcard .subtitle {
+        font-size: clamp(0.5rem, 1.4vw, 1.1rem);
+    }
 
-  .bcard .title::after {
-    font-size: clamp(0.8rem, 1.2vw, 1rem);
-    margin: 0 6px;
-  }
+    .bcard .title::after {
+        font-size: clamp(0.4rem, 1.2vw, 1rem);
+        margin: 0 6px;
+    }
 }
 
 /* Full Card */
 .fcard .img-box {
-    border-radius: 20px;
-    border: 1.5px solid #5a5a5a;
 
     width: 100%;
-    
+    border-radius: 12px;
+    border: 2px solid #5a5a5a;
     background-size: cover;
     background-position: center;
-    
+
 }
+
 
 .fcard .content {
     padding: 16px;
@@ -429,8 +530,7 @@ border: 1.5px solid #5a5a5a;
 
 
 .img-box {
-    border-radius: 20px;
-    border: 1.5px solid #5a5a5a;
+
     overflow: hidden;
     width: 100%;
 }
@@ -439,7 +539,7 @@ border: 1.5px solid #5a5a5a;
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* دقیقا مثل background-size: cover */
+    object-fit: cover;
 }
 
 /* ==========================
@@ -457,24 +557,24 @@ border: 1.5px solid #5a5a5a;
    Footer
 ========================== */
 footer {
-    background: #131313;
+    background: #0c0c0c;
     color: #bdbdbd;
     text-align: center;
     direction: ltr;
     padding: 20px 0;
-    margin: 0 1.5px;
-    border:  1.5px solid #5a5a5a;
-    border-radius: 20px 20px 0 0;
-    border-bottom-style: none ;
+
+    border: 2px solid #5a5a5a;
+    border-radius: 12px 12px 0 0;
+    border-bottom-style: none;
 
 }
 
 .footer-logos img {
     width: 58px;
-height: 58px;
+    height: 58px;
     margin: 8px;
-    border-radius: 20px;
-    border: 1.5px solid #5a5a5a;
+    border-radius: 12px;
+    border: 2px solid #5a5a5a;
 }
 
 .footer-text {
@@ -491,6 +591,7 @@ height: 58px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 /* ==========================
@@ -501,18 +602,19 @@ height: 58px;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    
+    border: 2px solid #5a5a5a;
     width: 100%;
-    max-width: 1600px; /* یا هر مقداری که می‌خوای */
-    
+    max-width: 1600px;
+    /* یا هر مقداری که می‌خوای */
+
     height: 90px;
-    background: #131313;
-    border: 1.5px solid #5a5a5a;
+    background: #0c0c0c;
+
     border-top-style: none;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 12px 12px;
     z-index: 1000;
 
-    padding: 20px;
+    padding: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -523,13 +625,14 @@ height: 58px;
 ========================== */
 .mega-menu {
     position: absolute;
-    top: 75px;
+    top: 72px;
     left: 50%;
     transform: translateX(-50%);
 
     width: 100%;
-    max-width: 1600px; /* یا هر عرض دلخواه */
-    
+    max-width: 1600px;
+    /* یا هر عرض دلخواه */
+
     background: #131313dc;
     backdrop-filter: blur(6px);
     max-height: 0;
@@ -538,7 +641,7 @@ height: 58px;
     box-shadow: 0 10px 25px #0002;
     z-index: 999;
     border: 2px solid #5a5a5a;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 12px 12px;
 }
 
 .mega-menu.show {
@@ -547,10 +650,10 @@ height: 58px;
 
 /* Grid 3x3 */
 .grid-box {
-    padding: 16px;
+    padding: 40px;
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    gap: 15px;
+    gap: 16px;
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -568,13 +671,13 @@ height: 58px;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border:  2px solid #5a5a5a;
-    border-radius: 20px;
+    border: 2px solid #5a5a5a;
+    border-radius: 12px;
 }
 
 .item h4 {
     margin-top: 8px;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /* ==========================
@@ -610,26 +713,89 @@ height: 58px;
 }
 
 /* Dot positions (3×3 grid) */
-.d1 { left: 6px; top: 6px; }
-.d2 { left: 20px; top: 6px; }
-.d3 { left: 34px; top: 6px; }
-.d4 { left: 6px; top: 20px; }
-.d5 { left: 20px; top: 20px; }
-.d6 { left: 34px; top: 20px; }
-.d7 { left: 6px; top: 34px; }
-.d8 { left: 20px; top: 34px; }
-.d9 { left: 34px; top: 34px; }
+.d1 {
+    left: 6px;
+    top: 6px;
+}
+
+.d2 {
+    left: 20px;
+    top: 6px;
+}
+
+.d3 {
+    left: 34px;
+    top: 6px;
+}
+
+.d4 {
+    left: 6px;
+    top: 20px;
+}
+
+.d5 {
+    left: 20px;
+    top: 20px;
+}
+
+.d6 {
+    left: 34px;
+    top: 20px;
+}
+
+.d7 {
+    left: 6px;
+    top: 34px;
+}
+
+.d8 {
+    left: 20px;
+    top: 34px;
+}
+
+.d9 {
+    left: 34px;
+    top: 34px;
+}
 
 /* Morph to X */
-.toggle:checked + .icon .d1 { transform: translate(10px, 10px); }
-.toggle:checked + .icon .d2 { opacity: 0; }
-.toggle:checked + .icon .d3 { transform: translate(-10px, 10px); }
-.toggle:checked + .icon .d4 { opacity: 0; }
-.toggle:checked + .icon .d5 { width: 3px; height: 3px; opacity: 0.4; }
-.toggle:checked + .icon .d6 { opacity: 0; }
-.toggle:checked + .icon .d7 { transform: translate(10px, -10px); }
-.toggle:checked + .icon .d8 { opacity: 0; }
-.toggle:checked + .icon .d9 { transform: translate(-10px, -10px); }
+.toggle:checked+.icon .d1 {
+    transform: translate(10px, 10px);
+}
+
+.toggle:checked+.icon .d2 {
+    opacity: 0;
+}
+
+.toggle:checked+.icon .d3 {
+    transform: translate(-10px, 10px);
+}
+
+.toggle:checked+.icon .d4 {
+    opacity: 0;
+}
+
+.toggle:checked+.icon .d5 {
+    width: 3px;
+    height: 3px;
+    opacity: 0.4;
+}
+
+.toggle:checked+.icon .d6 {
+    opacity: 0;
+}
+
+.toggle:checked+.icon .d7 {
+    transform: translate(10px, -10px);
+}
+
+.toggle:checked+.icon .d8 {
+    opacity: 0;
+}
+
+.toggle:checked+.icon .d9 {
+    transform: translate(-10px, -10px);
+}
 
 /* ==========================
    Responsive
@@ -640,11 +806,13 @@ height: 58px;
     .layout {
         flex-direction: column;
     }
+
     .profile-card {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .profile-card .info {
         justify-content: center;
         align-items: center;
@@ -657,6 +825,7 @@ height: 58px;
     .grid-box {
         grid-template-columns: repeat(3, 1fr);
     }
+
     .profile-card {
         flex-direction: column;
     }
@@ -667,15 +836,30 @@ height: 58px;
     ul {
         grid-template-columns: repeat(3, 1fr);
     }
+
     ul.x {
         grid-template-columns: repeat(9, 1fr);
+
     }
+
+    ul.b {
+        margin: 40px 0 0 0;
+
+
+
+    }
+
     .header-logo {
         width: 240px;
     }
+
     .hero {
-        padding: 32px;
-     
+        padding: 20px 20PX;
+
+    }
+     .heropage {
+        padding: 20px 20PX;
+
     }
 }
 
@@ -683,18 +867,39 @@ height: 58px;
 @media (min-width: 992px) {
     body {
         padding: 0 calc((100% - 1600px) / 2);
-        background: #252525;
+
     }
+
     ul {
         grid-template-columns: repeat(3, 1fr);
     }
+
     ul.x {
         grid-template-columns: repeat(9, 1fr);
-        ;
+
+        margin: 20px;
+
     }
+    ul.fcards {
+    
+    margin: 0px;
+
+}
+
     .hero {
-        padding: 64px;
-    
+        padding: 40px;
+        margin: 40px 0 40px;
+
     }
-    
+     .heropage {
+        padding: 40px;
+        margin: 20px 0 20px;
+
+    }
+
+footer {
+        
+        margin: 20px 0;
+
+    }
 }
