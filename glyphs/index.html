@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Glyph Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="board"></div>
+<button id="reset">Reset</button>
+<div id="glyph-container">
+  <!-- همه SVGها باید اینجا باشن -->
+  <div class="glyph-wrapper"><svg viewBox="0 0 64 64">...</svg></div>
+  
+
+</div>
+
+
+<script>
+  const board = document.getElementById('board');
+  const TOTAL_GLYPHS = 270;
+
+  for (let i = 1; i <= TOTAL_GLYPHS; i++) {
+    const img = document.createElement('img');
+    img.src = `glyphs/1 (${i}).svg`;
+    img.className = 'glyph';
+    board.appendChild(img);
+  }
+</script>
+
+<script src="drag.js"></script>
+</body>
+</html>
